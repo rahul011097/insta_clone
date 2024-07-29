@@ -80,13 +80,15 @@ class _LoginPageState extends State<LoginPage> {
                   flex: 2,
                   child: Container(),
                 ),
-                SvgPicture.asset(
-                  'assets/instname.svg',
-                  color: primaryColor,
-                  height: 64,
-                ),
+                Image.asset("assets/dummy1.png"),
+
+                // SvgPicture.asset(
+                //   'assets/instname.svg',
+                //   color: primaryColor,
+                //   height: 64,
+                // ),
                 const SizedBox(
-                  height: 64,
+                  height: 30,
                 ),
                 TextFieldInput(
                   hintText: 'Enter your email',

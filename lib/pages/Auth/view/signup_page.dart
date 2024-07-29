@@ -51,16 +51,12 @@ class _SignupPageState extends State<SignupPage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Flexible(
-                  flex: 2,
+                  flex: 3,
                   child: Container(),
                 ),
-                SvgPicture.asset(
-                  'assets/instaname.svg',
-                  color: primaryColor,
-                  height: 64,
-                ),
+                Image.asset("assets/dummy1.png"),
                 const SizedBox(
-                  height: 64,
+                  height: 30,
                 ),
                 Stack(
                   children: [
