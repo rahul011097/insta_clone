@@ -2,6 +2,11 @@
 
 A new Flutter project.
 
+## My Resume
+
+You can view my resume [here](https://github.com/rahul011097/insta_clone_flutter_app/blob/main/Rahul_kumar_gupta_flutter_developer.pdf).
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
