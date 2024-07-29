@@ -1,17 +1,9 @@
-import 'dart:typed_data';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:get/route_manager.dart';
 import 'package:social_clone/pages/Auth/controller/auth_controller.dart';
-
-//import 'package:instagram_clone_flutter/resources/auth_methods.dart';
-// import 'package:instagram_clone_flutter/responsive/mobile_screen_layout.dart';
-// import 'package:instagram_clone_flutter/responsive/responsive_layout.dart';
-// import 'package:instagram_clone_flutter/responsive/web_screen_layout.dart';
 import 'package:social_clone/pages/Auth/view/login_page.dart';
 import 'package:social_clone/utils/colors.dart';
-import 'package:social_clone/utils/utils.dart';
+
 import 'package:social_clone/widgets/text_field_widget.dart';
 
 class SignupPage extends StatefulWidget {

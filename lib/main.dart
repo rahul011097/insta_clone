@@ -1,14 +1,9 @@
-import 'dart:io';
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:social_clone/pages/Auth/view/login_page.dart';
-import 'package:firebase_app_check/firebase_app_check.dart';
-import 'package:social_clone/pages/homepage/views/homepage.dart';
 import 'package:social_clone/responsive/mobilescreen.dart';
 import 'package:social_clone/responsive/responsive.dart';
 import 'package:social_clone/responsive/webscreen.dart';
@@ -25,13 +20,7 @@ void main() async {
       storageBucket: "instaclone-f42ee.appspot.com",
     ),
   );
-  // await FirebaseAppCheck.instance.activate(
-  //   webProvider: ReCaptchaV3Provider(
-  //       'your-recaptcha-v3-site-key'), // Replace with your actual reCAPTCHA site key
-  //   androidProvider:
-  //       AndroidProvider.playIntegrity, // Use Play Integrity for production
-  //   appleProvider: AppleProvider.appAttest,
-  // );
+
   FirebaseStorage.instanceFor(bucket: "instaclone-f42ee.appspot.com");
   runApp(const MyApp());
 }
@@ -39,7 +28,6 @@ void main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
@@ -53,7 +41,6 @@ class MyApp extends StatelessWidget {
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.active) {
-            // Checking if the snapshot has any data or not
             if (snapshot.hasData) {
               // if snapshot has data which means user is logged in then we check the width of screen and accordingly display the screen layout
               return const ResponsiveLayout(
@@ -67,8 +54,6 @@ class MyApp extends StatelessWidget {
               );
             }
           }
-
-          // means connection to future hasnt been made yet
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Center(
               child: CircularProgressIndicator(),

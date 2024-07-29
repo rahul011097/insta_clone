@@ -1,14 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:social_clone/models/user.dart';
 import 'package:social_clone/pages/Auth/controller/auth_controller.dart';
-import 'package:social_clone/pages/homepage/controller/homecontroller.dart';
 import 'package:social_clone/pages/homepage/widgets/comment_card.dart';
 import 'package:social_clone/resources/firebase_methods.dart';
 import 'package:social_clone/utils/colors.dart';
 import 'package:social_clone/utils/utils.dart';
-//import 'package:social_clone/widgets/comment_card.dart';
 
 class CommentPage extends StatefulWidget {
   final postId;

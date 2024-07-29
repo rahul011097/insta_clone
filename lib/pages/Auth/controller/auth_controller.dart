@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'dart:typed_data';
 import 'package:image_picker/image_picker.dart';
 import 'package:social_clone/models/user.dart';
-import 'package:social_clone/pages/homepage/views/homepage.dart';
 import 'package:social_clone/responsive/mobilescreen.dart';
 import 'package:social_clone/responsive/responsive.dart';
 import 'package:social_clone/responsive/webscreen.dart';

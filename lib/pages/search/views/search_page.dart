@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
-
 import 'package:social_clone/pages/profile/view/profile.dart';
 import 'package:social_clone/pages/search/controller/search_controller.dart';
 import 'package:social_clone/utils/colors.dart';

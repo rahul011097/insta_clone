@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:get/route_manager.dart';
-import 'package:social_clone/core/routes/app_routes.dart';
 import 'package:social_clone/pages/Auth/controller/auth_controller.dart';
 import 'package:social_clone/pages/Auth/view/signup_page.dart';
 import 'package:social_clone/utils/colors.dart';
-import 'package:social_clone/utils/varibles.dart';
-import 'package:social_clone/utils/utils.dart';
 import 'package:social_clone/widgets/text_field_widget.dart';
 
 class LoginPage extends StatefulWidget {

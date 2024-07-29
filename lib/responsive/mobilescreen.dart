@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:social_clone/pages/addPost/controller/addpost_controller.dart';
 import 'package:social_clone/pages/addPost/views/addpost.dart';
 import 'package:social_clone/pages/homepage/controller/homecontroller.dart';
 import 'package:social_clone/pages/homepage/views/homepage.dart';
